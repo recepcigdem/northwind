@@ -5,17 +5,17 @@
   <thead>
     <tr>
       <th>Id</th>
-      <th>Ürün adı</th>
       <th>Kategori</th>
-      <th>Fiyat</th>
+      <th>Ürün adı</th>
       <th>Stok Adedi</th>
+      <th>Fiyat</th>
     </tr>
   </thead>
   <tr *ngFor="let product of products">
     <td>{{ product.productId }}</td>
-    <td>{{ product.productName }}</td>
     <td>{{ product.categoryId }}</td>
-    <td>{{ product.unitPrice }}</td>
+    <td>{{ product.productName }}</td>
     <td>{{ product.unitsInStock }}</td>
+    <td>{{ product.unitPrice }}</td>
   </tr>
 </table>
